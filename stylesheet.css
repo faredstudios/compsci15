@@ -1,0 +1,447 @@
+@font-face {
+font-family: "Futura";
+src: url("futuralightbt.ttf");
+}
+.font{
+    letter-spacing:0.1em;
+    line-height:2em;
+    font-family: 'Futura',Helvetica,Arial, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+.light{
+    color:#fff!important;
+}
+
+.center{
+    text-align:center!important;
+    margin:0 auto!important;
+}
+.title{
+    border-bottom:solid 1px #dbd8d6;
+    text-align:center;
+    position:relative;
+    color:#313131;
+    font-size:24px;
+    letter-spacing: 0.3em;
+}
+.navtext{
+    margin:0px 20px;
+    /*color:#eaeaea!important;*/
+    font-size:12px;
+}
+.fsize11{
+    font-size:1em;
+}
+
+.img-wrapper{
+    position: relative;
+    width: 100%;
+}
+.img-wrapper .tint{
+    width: 100%;
+    height: auto;
+}
+
+.img-wrapper .viewcollection{
+  position: absolute;
+  top: 37%;
+  left: 48%;
+  transform: translate(-50%, -70%);
+  -ms-transform: translate(-50%, -70%);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+
+
+.viewcollection{
+    border-radius:0;
+    opacity:0.8;
+    width:30em;
+    height:6em;
+    font-size:14px;
+    background-color:#1B1B1B;
+    color:#eaeaea;
+    box-shadow: 0 0 5px #000;
+    transition:.7s!important;
+    
+}
+.viewcollection:hover{
+    opacity:0.7;
+    background-color:#313131;
+    color:#adadad;
+    width:50%;
+}
+
+
+.storecontainer{
+    margin:10px 10px;
+}
+.plus{
+    padding-top:15px;
+    color:#5C5C5C;
+}
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.hovereffect .overlay {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+	top: auto;
+	bottom: 0;
+	padding: 0.5em;
+	height: 4.75em;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+	visibility: hidden;
+
+}
+.hovereffect img {
+    display: block;
+    position: relative;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.hovereffect:hover img {
+-webkit-transform: translate3d(0,-10%,0);
+	transform: translate3d(0,-10%,0);
+}
+.hovereffect h7 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+	float: left;
+	margin: 0px;
+	display: inline-block;
+}
+
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+	color: #fff;
+	border: 1px solid #fff;
+	margin: 50px 0 0 0;
+	background-color: transparent;
+}
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+
+.hovereffect p.icon-links a {
+	float: right;
+}
+
+.hovereffect:hover p.icon-links a:hover,
+.hovereffect:hover p.icon-links a:focus {
+	color: #252d31;
+}
+
+.hovereffect h7,
+.hovereffect p.icon-links a {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+	visibility: visible;
+}
+
+.hovereffect p.icon-links a span:before {
+	display: inline-block;
+	padding: 8px 10px;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.hovereffect:hover .overlay,
+.hovereffect:hover h7,
+.hovereffect:hover p.icon-links a {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.hovereffect hr{
+    margin-bottom:40px;
+    width:0%;
+}
+.hovereffect:hover hr{
+    width:70%;
+    transition:.5s;
+}
+
+.hovereffect:hover h7 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+.hovereffect:hover h6{
+    color:#000;
+    transition:.3s!important;
+}
+
+.hovereffect:hover p.icon-links a:nth-child(3) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.producttext{
+    color:#fff;
+    font-size:12px;
+    margin-top:20px;
+}
+
+
+
+.productborder{
+    
+    border-top:1px solid #f7f7f7;
+    border-bottom:1px solid #f7f7f7;
+    border-left:1px solid #f7f7f7;
+    display:block;
+    background-color:#E7E7E7;
+    width:450px;
+    height:100%;
+}
+.thumbnail{
+    display:block;
+    width:100%;
+}
+
+
+.navtext{
+    cursor:pointer;
+}
+
+a:hover{
+    color:#999999;
+}
+.inputPopup{
+    background-color:#EDEDED;
+}
+input[type=text] {
+    border-radius:0;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  border: 1px solid #999999;
+  box-shadow:0 0 4px #757575;
+  /*width:50%; */
+}
+.form-control{
+    width:100%;
+    border:none;
+}
+.formlabel{
+    font-size:12px;
+    line-height: 1.5em;
+}
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+.button{
+    border-radius:0;
+    height:4em;
+    font-size:11px;
+    background-color:#1B1B1B;
+    color:#eaeaea;
+    width:100%;
+    
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.button:hover{
+    background-color:#313131;
+    color:#adadad;
+}
+.btn-0{
+    border:0!important;
+    background:rgba(0, 0, 0, 0)!important;
+    cursor:pointer;
+}
+.btn-0:hover i{
+    transition:.2s!important;
+    color:#fff;
+}
+
+.bg-faiza{
+    background-color: #1B1B1B;
+}
+
+.bg{
+    width:100%;height:2000px;margin:0;background-color:#E7E7E7;
+}
+
+.bg4{
+    width:100%;height:1000px;margin:0;background-color:#E7E7E7;
+}
+
+.whiteline{
+    width:100%;height:10px;margin:0;background-color:#fff;
+}
+
+
+.footer{
+    height:70%;width:100%;background-color:#1B1B1B;margin:0;
+}
+.footerrow{text-align:left;margin:0;
+}
+.footerList{
+    list-style-type:none;color:#e6e6e6;font-size:11px;
+}
+.footerListH{
+    color:#aaa;font-size:12px;
+}
+.rule{
+    color:#999999;margin:50px 50px;
+}
+
+.border-right{
+    border-right:1px solid #fff!important;
+}
+.border-bottom{
+    border-bottom:1px solid #c1c1c1!important;
+}
+
+
+
+
+
+
+.slideleft {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideleft.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideleft::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    } 
+}
+
+.slideright {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideright.slideR {                  
+    visibility: visible;                  
+    animation: slideR 1s;
+}
+.slideright::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slideR {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    } 
+}
+
+
+
+.our-team{
+            text-align: center;
+            position: relative;
+            color: #fff;
+        }
+        .our-team:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            transition:all 0.3s ease 0s;
+            opacity: 0;
+        }
+        .our-team:hover:before{
+            opacity: 1;
+        }
+        .our-team img{
+            width: 100%;
+            height: auto;
+        }
+        .our-team .team-content{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 0;
+            background-color: rgba(33,33,33,0.8);
+            transition:all 0.3s ease 0s;
+        }
+        .our-team:hover .team-content{
+            bottom: 20%;
+        }
+        .our-team .team-content .name{
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+            transition:all 0.3s ease 0s;
+        }
+        .our-team:hover .team-content .name{
+            transform:translateY(30px);
+            transition-delay:0.3s;
+        }
+        .our-team .team-content .post{
+            font-size: 17px;
+            display: block;
+            transition:all 0.3s ease 0s;
+            text-transform: capitalize;
+        }
+        .our-team:hover .team-content .post{
+            transform:translateY(-30px);
+            transition-delay:0.3s;
+        }
+
+        @media screen and (max-width:990px){
+            .our-team{
+                margin-bottom: 30px !important;
+            }
+        }

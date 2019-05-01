@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COMPSCI_15</title>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel=" stylesheet">
+
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	<script src="float-panel.js"></script>
+
+</head>
+
+<body>
+
+
+
+    
+
+
+
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-faiza font">
+           <div class="shadow-lg container">
+                  <a class="navbar-brand justify-content-center" href=""><h3>COMPSCI 15</h3></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              
+              <li class="nav-item"><a class="nav-link" href="#"></a></li>
+              
+              <li class="nav-item n1">
+                <a class="navtext nav-link scroll">University Facts</a>
+              </li>
+
+              <li class="nav-item n2">
+                <a class="navtext nav-link scroll2">Markup & Scripting</a>
+              </li>
+              
+              <li class="nav-item n3">
+                <a class="navtext nav-link scroll3">Tech Used</a>
+              </li>
+              
+              <li class="nav-item n4">
+                <a class="navtext nav-link scroll4">Team Members</a>
+              </li>
+           
+           </ul>
+           
+          <!-- <span class="nav-item navbar-nav">
+              <a class="navtext nav-link" role="button" data-toggle="modal" data-target="#LoginModal">LOGIN</a>
+            </span>
+            <span class="nav-item navbar-nav">
+               <a class="navtext  nav-link" role="button" data-toggle="modal" data-target="#LoginModal"><i class="material-icons mt-2">shopping_basket</i></a>
+            </span> -->
+
+
+
+
+           
+          </div>
+          
+          </div>
+        </nav>
+        <script>
+
+        	
+			$(document).ready(function() {
+		  $(".scroll").click(function() {
+		    $("body,html").animate(
+		      {scrollTop: $("#section").offset().top},2000);
+		  });
+		});
+			$(document).ready(function() {
+		  $(".scroll2").click(function() {
+		    $("body,html").animate(
+		      {scrollTop: $("#section2").offset().top},2000);
+		  });
+		});
+			$(document).ready(function() {
+		  $(".scroll3").click(function() {
+		    $("body,html").animate(
+		      {scrollTop: $("#section3").offset().top},2000);
+		  });
+		});
+			$(document).ready(function() {
+		  $(".scroll4").click(function() {
+		    $("body,html").animate(
+		      {scrollTop: $("#section4").offset().top},2000);
+		  });
+		});
+
+			$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 700 && scroll<=2500) {
+        $(".n2,.n3,.n4").removeClass("active");
+        $(".n1").addClass("active");
+    } else if(scroll >= 2501 && scroll<=4300) {
+        $(".n1,.n3,.n4").removeClass("active");
+        $(".n2").addClass("active");
+    } else if(scroll >= 4301 && scroll<=6400) {
+        $(".n1,.n2,.n4").removeClass("active");
+        $(".n3").addClass("active");
+    } else if(scroll >= 6001 && scroll<=6800) {
+        $(".n1,.n2,.n3").removeClass("active");
+        $(".n4").addClass("active");
+    }
+});
+	</script>
+
+        <div class="img-wrapper top">
+		    <img class="tint" src="https://i.imgur.com/8yrq5Re.jpg" height="auto" width="100%">
+		  
+		    <button class="font btn btn-large viewcollection scroll">ENTER</button>
+		</div>
+
+
+
+		<div  id="section" class="whiteline"></div>
+
+<div class="font bg pt-5">
+    <div class="container">
+    	<br>
+        <p class="pb-4 border-bottom title">University Facts</p>
+        <div class="container">
+        	<br><br>
+            <div class="row slideleft">
+                <div class="col-sm">
+                	<br>
+                	<p>Established in 1824 under the name of <strong>University of Manchester Institute of Science and Technology</strong>, The University carries a lot of history. With it having 25 nobel prize winner representer and strong research presence, the University is ranked #29 worldwide  <a href="https://www.topuniversities.com/universities/university-manchester"> <i>[1]</i></a></p>
+                </div>
+                <div class="col-sm">
+                	<img class="card-img-top" alt="Thumbnail First" src="http://2013.igem.org/wiki/images/e/e2/Man_uni.jpg">
+                </div>
+            </div>
+
+
+            <br><br><br>
+
+
+            <div class="row slideright">
+            	<div class="col-3">
+            		<p class="pb-4 border-bottom title">History</p>
+           		 </div>
+            	<div class="col-sm">
+            		<p>The University was actually formed as a merger between two existing universities: UMIST and Victoria University of Manchester. The Sackville Street Building first opened in 1902. The engineering facility was able to aid in the first world war supplying hydrophones  
+            		<cite><a href="https://en.oxforddictionaries.com/definition/hydrophone"><i>(<q>A microphone which detects sound waves under water.</q>)&nbsp;&nbsp;</i></cite></a>
+								<a class="btn btn-outline-dark" href="history.html">Read more</a>
+								</p>
+            	</div>
+            </div>
+
+             <br><br><br>
+
+
+            <div class="row slideleft">
+            	<div class="col-sm">
+            		<p>As Manchester was the place of many significant discoveries such as Rutherford "splitting" the atom 
+							<cite><a href="https://www.manchester.ac.uk/discover/news/rutherfords-legacy--the-birth-of-nuclear-physics-in-manchester/"><i>[2]</i> </a></cite> and the
+							"Manchester baby" the first computer to run a program<cite><a href="https://www.manchester.ac.uk/discover/news/how-a-70-year-old-baby-changed-the-face-of-modern-computing/"><i>[3]</i> </a></cite> and more recently, the isolation of graphene
+							(the first known two-dimensional material)in 2004 which won two nobel prizes. <cite><a href="https://www.graphene.manchester.ac.uk/about/"><i>[4]</i> </a></cite>
+								it is no surprise that the University is a recognized and highly regarded institution. The University currently teaches over one thousand courses between the faculties of Biology and Health, Science and Engineering, and Humanities. &nbsp;&nbsp;
+								<a class="btn btn-outline-dark" href="https://www.manchester.ac.uk/discover/history-heritage/history/achievements/">Read more</a>
+							</p>
+            	</div>
+
+            	<div class="col-3">
+            		<p class="pb-4 border-bottom title">Academic Presence</p>
+           		 </div>
+            </div>
+
+            <br><br><br>
+
+
+            <div class="row slideright">
+            	<div class="col-3">
+            		<p class="pb-4 border-bottom title">Student Life</p>
+           		 </div>
+            	<div class="col-sm">
+            		<p>Besides academics, the University offers a wide range of non-academic activities that encourage wellbeing. The University launched "Stellify", a program that encourages taking part in volunteering, learning a new language, and take a position in one of the 
+								student societies<cite><a href="https://www.staffnet.manchester.ac.uk/stellify/about-stellify/"><i>[5]</i> </a></cite>. The students also run over 400  societies, from cricket to philosophy with the ability for any student to start his/her society. <cite><a href="https://manchesterstudentsunion.com/societies"><i>[6]</i> </a></cite>&nbsp;&nbsp;
+							
+								<a class="btn btn-outline-dark" href="http://www.stellify.manchester.ac.uk/about">Read more</a>
+							</p>
+            	</div>
+            </div>
+
+            <br><br><br><br>
+
+            <p class="pb-4 border-bottom title slideright">Facts & Figures</p>
+            <div class="row slideleft">
+            	<div class="col-sm">
+            		<p>
+						Here are some facts about the University in numbers: <cite><a href="http://documents.manchester.ac.uk/display.aspx?DocID=35329"><i>[7]</i> </a></cite>
+					</p>
+            		<ul>
+            			<li class="list-item">
+							40,490 students are enrolled, eleven thousand of which come from overseas, making it the largest University in the uk
+						</li>
+						<li class="list-item">
+							4,000,000 printed books are available in the libraries 
+						</li>
+						<li class="list-item">
+							25 nobel prize winners were or have taught in this University, two of which (Dr. Geim and Dr. Noboselov) are current lecturers.
+						</li>
+						<li class="list-item">
+							93.2% of the graduates receive jobs right after they graduate 
+						</li>
+						<li class="list-item">
+							12,000 staff members
+						</li>
+						<li class="list-item">
+							610 staff and alumni volunteered to raise more than £3.5 million for state schools.
+						</li>
+						<li class="list-item">
+							6th in ranking in the UK
+						</li>
+	            		</ul>
+            	</div>
+            </div><br><br>
+            <div class="row slideright">
+
+            	<div class="col-sm"><a href="research.html"><button class="font btn btn-large viewcollection">Research</button></a></div>
+            	<div class="col-sm">
+            		
+             <a href="courses.html"><button class="font btn btn-large viewcollection">Courses</button></a>
+            	</div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+	<div  id="section2" class="whiteline"></div>
+
+<div class="font bg pt-5">
+    <div class="container">
+    	<br>
+        <p class="pb-4 border-bottom title">Markup & Scripting</p>
+        <div class="container">
+
+
+            <br><br><br>
+
+
+            <div class="row slideright">
+            	<div class="col-3">
+            		<p class="pb-4 border-bottom title">Markup Languages</p>
+           		 </div>
+            	<div class="col-sm">
+            		<p>A markup language is a human-readable computer language that defines different elements in a document using tags. It is thought to be created by Tim Berners-Lee in the 1990s when he thought of creating something that would allow electronic documents to be displayed on the world wide web. The tags used in markup language are commonly found as words in between a ‘greater than’ sign and a ‘less than’ sign (<>). There are various markup languages that exist but the most commonly used ones are HTML and XML used on all web pages on the internet. Markup languages are a type of declarative programming which means that it expresses the logic of the code without describing it's control flow.</p>
+            	</div>
+            </div>
+            <br>
+            <div class="row">
+            	<div class="col-sm slideleft">
+            		<img src="https://i.imgur.com/0w0fRGa.png" height="400px" width="400px">
+            	</div>
+            	<div class="col-sm slideright">
+            		<img src="https://i.imgur.com/7Txum9W.png" height="400px" width="400px">
+            	</div>
+            </div>
+
+             <br><br><br>
+
+             <p class="pb-4 border-bottom title">Scripting Languages</p><br>
+            <div class="row slideleft">
+            	<div class="col-5">
+            		<img src="https://i.imgur.com/cYwgWGe.png" height="400px" width="400px">
+           		 </div>
+            	<div class="col-sm">
+            		<p> A scripting language is a type of programming language that allows other programming languages to communicate and integrate with one another. It allows for machines to execute the code line by line; an example of some scripting languages are JavaScript and Python; they are often found alongside HTML and C++ so they function together. Scripting languages are also imperative which means that you tell the compiler what you want to be done step by step and, more often than not, scripting languages aren’t easy for humans to read.
+							</p>
+            	</div>
+
+            	
+            </div>
+
+     		 <br>
+
+
+           
+           
+            <br>
+            <div class="row slideright">
+            	<div class="col-4"></div>
+            	<div class="col-sm">
+            <br><br>
+             <button class="font btn btn-large viewcollection scroll3">> Tech Used</button>
+            	</div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+<div  id="section3" class="whiteline"></div>
+
+<div class="font bg pt-5">
+    <div class="container">
+    	<br>
+        <p class="pb-4 border-bottom title">Tech Used</p>
+        <div class="container">
+        		<br><br>
+        		 <div class="row slideright">
+        		 	<div class="col-3">
+            		<p class="pb-4 border-bottom title">Bash Scripting</p>
+           		 </div>
+            	<div class="col-sm">
+            		<p>Bash is a shell scripting language that executes a wide range of commands. You can use bash as a tool for any task such as extracting information. The user can preform these tasks on the terminal using a combination of existing commands. For example, the command "echo" will display a message of the result of whatever command you asked the computer to perform.
+							<cite><a href="https://guide.bash.academy/inception/"><i>[1]</i> </a></cite>
+							</p>
+
+            	</div>
+            </div><br>
+            	<div class="row slideleft">
+        		 	
+            	<div class="col-sm">
+            		<p>
+								Pipelines (denoted "|") are used to connect two commands together, linking the output of the first command with the input of the second.
+								This makes writing tasks easier thus it is a commonly used property. <cite><a href="http://www.gnu.org/software/bash/manual/html_node/Pipelines.html"><i>[2]</i> </a></cite>
+							</p>
+
+            	</div>
+            	<div class="col-3">
+            		<p class="pb-4 border-bottom title">Pipelines</p>
+           		 </div>
+            </div><br>
+            	<div class="row slideright">
+        		 	
+            	<div class="col-sm">
+            		<p>
+								Loops in bash are used to run a certain command over and over again until the requested result is satisfied. To do so, you usually start with one of the three commands "while","until","for". <strong>while</strong> runs the command repeatedly as long as it is true, while <strong>until</strong> will run the command until the result is true. <strong>for</strong>, however, 
+								does the procedure a little differently; when the computer runs the command it will interpret the list in the order that it was listed at and execute the command.
+								<cite><a href="https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php"><i>[3]</i> </a></cite>
+							</p>
+
+            	</div>
+            	<div class="col-3">
+            		<p class="pb-4 border-bottom title">Loops</p>
+           		 </div>
+            </div><br>
+            	<div class="row slideleft">
+        		 	
+            	<div class="col-sm">
+            		<p>
+								Conditional statements <strong>(if)</strong> are used to proceed with the appropriate action depending on if the command succeeded or failed. When writing a conditional statement with <strong>then</strong> the command will only take action when the value for <strong>if</strong> is true. When including <strong>else</strong> then the terminal will preform your desired task when the <strong>if</strong> statement is false. <strong> elif</strong> adds another layer of <strong>if</strong> that offers another pathway to the same result. 
+								Boolean algebra can also be implemented with conditional statements. 
+								As it can be seen, conditional statements can be very useful when running complex tests. <cite><a href="https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php"><i>[4]</i> </a></cite>
+							</p>
+
+            	</div>
+            	<div class="col-3">
+            		<p class="pb-4 border-bottom title">Conditional Statements</p>
+           		 </div>
+            </div>
+
+            	
+            
+            <br><br><br>
+            <p class="pb-4 border-bottom title">HTML</p>
+            	<div class="row slideright">
+        		 	<div class="col-3">
+            		<p class="pb-4 border-bottom title">Hypertext Markup Language</p>
+           		 </div>
+            	<div class="col-sm">
+            		<p>HTML is one of the most recognizable Markup Languages used, especially for Web pages today. It is the basis of what holds the actual data behind ever web page, while the characteristics and presentation (Fonts, Colours, Layouts etc) of the data is handled by CSS (Cascading Style Sheets). </p>
+
+            	</div>
+            </div><br>
+            <div class="row slideleft">
+        		 	<div class="col-3">
+            		<p class="pb-4 border-bottom title">Bootstrap 4</p>
+           		 </div>
+            	<div class="col-sm">
+            		<p>Bootstrap is an open-source framework, which consists of CSS and Javascript libraries which can easily be integrated in any HTML document by including a <'Link'> tag. This is a massive aid towards web developers in designing their websites quickly and neatly as they're able to access a list of pretty class templates such as well-designed buttons, tables, coursels, navigational bars, forms, modals etc. It is imperative in using Bootstrap if time is of the essence, for example this website was designed in only a couple hours.
+            			<cite><a href="https://getbootstrap.com/"><i>[5]</i> </a></cite>
+            		</p>
+
+            	</div>
+            </div><br>
+            <div class="row slideright">
+        		 	<div class="col-3">
+            		<p class="pb-4 border-bottom title">JQuery</p>
+           		 </div>
+            	<div class="col-sm">
+            		<p>JQuery is a JavaScript library which wasn't completely necessary when it comes to web development however it does make it simpler and quicker to utilize as opposed to the HTML DOM. JQuery and HTML DOM are generally used to select elements from a HTML document to pass it on to a JavaScript function in order for an action to occur (For example, selecting the id of a button which is clicked).<cite><a href="https://jquery.com/"><i>[6]</i> </a></cite>
+            		</p>
+            		<p>
+            			HTML DOM: document.getElementId('someId'); </p>
+            			<p>JQuery: $('#someId');</p>
+
+            		</p>
+
+            	</div>
+            </div><br>
+
+        	</div>
+        	<div class="row slideleft">
+        		<div class="col-6"></div>
+        		<div class="col-sm">
+             	<button class="font btn btn-large viewcollection scroll4">> Team Members</button></div>
+        	 </div>
+            	</div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+
+<div  id="section4" class="whiteline"></div>
+
+<div class="font bg4 pt-5">
+    <div class="container">
+    	<br>
+        
+        <p class="pb-4 border-bottom title">Team Members</p>
+        <br><br><br>
+        <div class="container">
+        	 <div class="row">
+        <div class="col-3 slideright">
+            <div class="our-team">
+                <a class="producttext" href="Fared.html"><img src="https://i.imgur.com/9nOaCRl.png" height="1000px" alt="team member" class="img-responsive">
+                <div class="team-content">
+                    <h3 class="name">Fared</h3>
+                    <span class="post">Faiza</span>
+                </div> </a>
+            </div>
+        </div>
+
+        <div class="col-3 slideleft">
+            <div class="our-team">
+                 <a class="producttext" href="Naser.html"><img src="https://i.imgur.com/mWti3Il.png" alt="team member" class="img-responsive">
+                <div class="team-content">
+                    <h3 class="name">Naser</h3>
+                    <span class="post">Al Salem</span>
+                </div></a>
+            </div>
+        </div>
+
+        <div class="col-3 slideright">
+            <div class="our-team">
+                 <a class="producttext"  href="Isaac.html"><img src="https://i.imgur.com/UJk5ZWc.png" alt="team member" class="img-responsive">
+                <div class="team-content">
+                    <h3 class="name">Isaac</h3>
+                    <span class="post">Van Bueren</span>
+                </div></a>
+            </div>
+        </div>
+
+        <div class="col-3 slideleft">
+            <div class="our-team">
+                <a  class="producttext" href="Harry.html"> <img src="https://i.imgur.com/52vzHaP.png" alt="team member" class="img-responsive">
+                <div class="team-content">
+                    <h3 class="name">Harry</h3>
+                    <span class="post">O'Brien</span>
+                </div></a>
+            </div>
+        </div>
+    </div>
+
+
+
+            	</div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+<div class="pt-5 font footer">
+      
+        <div class="row footerrow">
+        
+            <div class="container">
+               
+            </div>
+            <hr class="rule">
+            </div>
+            
+            
+</div>
+    </div>
+
+
+</body>
+
+</html>
